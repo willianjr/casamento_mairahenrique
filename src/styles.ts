@@ -98,28 +98,89 @@ export const SessionTwo = styled.main`
 export const ContainerSessionTwo = styled.div`
   transform: skewY(3deg);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
   min-height: 100vh;
-`
-export const ContainerSessionFoor = styled.div`
-  transform: skewY(-3deg);
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  min-height: 100vh;
+
+  & div.conteudo {
+    padding: 15rem 20rem;
+    & h3 {
+      color: #fff;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      margin: 1rem 0;
+    }
+    & address {
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+    }
+    & iframe {
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    }
+    & a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+      padding: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 `
 
 export const SessionTree = styled.main`
   background: url(${Foto1}) fixed no-repeat -10% top;
   background-size: contain;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: right;
   flex: 1;
+  padding: 5rem 5rem 0rem 50rem;
   min-height: 100vh;
   /*  scroll-snap-align: end; */
   @media ${device.mobileML} {
     /* scroll-snap-align: start;*/
+  }
+  & div.conteudo {
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #efeeee;
+    & p {
+      width: 50%;
+      height: auto;
+
+      padding-right: 10rem;
+      line-height: 2rem;
+      font-size: 20px;
+      text-align: justify;
+      border-right: 1px solid #efeeee;
+    }
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #efeeee;
+      cursor: pointer;
+      padding: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+      & strong {
+        font-size: 2rem;
+      }
+    }
   }
 `
 
@@ -138,17 +199,101 @@ export const SessionFoor = styled.main`
     /* scroll-snap-align: start;*/
   }
 `
+export const ContainerSessionFoor = styled.div`
+  transform: skewY(-3deg);
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 100vh;
+  padding: 5rem 5rem 0rem 50rem;
+
+  & div.conteudo {
+    height: 80vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #222;
+    & p {
+      width: 80%;
+      height: auto;
+      line-height: 2rem;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+`
 
 export const SessionFive = styled.main`
   background: url(${Foto1}) fixed no-repeat -10% top;
   background-size: contain;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: right;
   flex: 1;
+  padding: 5rem 5rem 0rem 50rem;
   min-height: 100vh;
-  /*  scroll-snap-align: end; */
 
   @media ${device.mobileML} {
     /* scroll-snap-align: start;*/
+  }
+
+  & div.conteudo {
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #efeeee;
+    & p {
+      width: 50%;
+      height: auto;
+
+      padding-right: 10rem;
+      line-height: 2rem;
+      font-size: 20px;
+      text-align: justify;
+      border-right: 1px solid #efeeee;
+    }
+    & ul {
+      list-style: none;
+      & li {
+        margin-bottom: 0.5rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        border-bottom: 1px solid #efeeee;
+        & strong {
+          font-size: 1.5rem;
+          & small {
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+          }
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #efeeee;
+      cursor: pointer;
+      padding: 0.5rem;
+      &:hover {
+        text-decoration: underline;
+      }
+      & strong {
+        font-size: 2rem;
+      }
+      > svg {
+        margin: 1rem;
+      }
+    }
   }
 `

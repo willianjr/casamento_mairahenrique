@@ -14,6 +14,9 @@ const cssSessionOne = css<{ active: 'home' | 'localizacao' | 'rsvp' | 'presentes
       & ul {
         & li {
           border-right: 1px solid white;
+          & :hover {
+            border-bottom: 1px solid #fcfcfc;
+          }
           & div {
             color: #bababa;
             background-color: rgba(0, 0, 0, 0.5);
@@ -22,6 +25,7 @@ const cssSessionOne = css<{ active: 'home' | 'localizacao' | 'rsvp' | 'presentes
             padding: 0.5rem 1rem;
             & :hover {
               background-color: rgba(0, 0, 0, 0.8);
+              border-bottom: 1px solid #fcfcfc;
             }
             @media ${device.mobileML} {
               background-color: transparent;
@@ -52,12 +56,16 @@ const cssSessionFive = css`
   & ul {
     & li {
       border-right: 1px solid #fcfcfc;
+      & :hover {
+        border-bottom: 1px solid #fcfcfc;
+      }
       & div {
         font-size: 1rem;
         letter-spacing: 0.1rem;
         padding: 0.1rem;
         color: #bababa;
         & :hover {
+          border-bottom: 1px solid #fcfcfc;
         }
         @media ${device.mobileML} {
           background-color: transparent;
@@ -88,12 +96,16 @@ const cssSessionTree = css`
   & ul {
     & li {
       border-right: 1px solid #fcfcfc;
+      & :hover {
+        border-bottom: 1px solid #fcfcfc;
+      }
       & div {
         font-size: 1rem;
         letter-spacing: 0.1rem;
         padding: 0.1rem;
         color: #bababa;
         & :hover {
+          border-bottom: 1px solid #fcfcfc;
         }
         @media ${device.mobileML} {
           background-color: transparent;
@@ -123,11 +135,15 @@ const cssSessionTwo = css`
   & ul {
     & li {
       border-right: 1px solid #111;
+      & :hover {
+        border-bottom: 1px solid #111;
+      }
       & div {
         font-size: 1rem;
         letter-spacing: 0.1rem;
         padding: 0.1rem;
         & :hover {
+          border-bottom: 1px solid #111;
         }
         @media ${device.mobileML} {
           background-color: transparent;
@@ -158,11 +174,15 @@ const cssSessionFoor = css`
   & ul {
     & li {
       border-right: 1px solid #111;
+      & :hover {
+        border-bottom: 1px solid #111;
+      }
       & div {
         font-size: 1rem;
         letter-spacing: 0.1rem;
         padding: 0.1rem;
         & :hover {
+          border-bottom: 1px solid #111;
         }
         @media ${device.mobileML} {
           background-color: transparent;
