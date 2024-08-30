@@ -91,7 +91,7 @@ function App() {
               <br />
               Agradecemos de coração por estarem conosco neste momento tão significativo.
             </p>
-            <a href="#" target="_blank">
+            <a href="https://wa.me/+5531982913071" target="_blank">
               <strong>RSVP</strong>
               Clique aqui para confirmar a sua presença
             </a>
