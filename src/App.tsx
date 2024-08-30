@@ -58,8 +58,6 @@ function App() {
               <address>RUA DOS FILIPENSES, 85 - BETÂNIA/ IPATINGA - MG</address>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.236282279545!2d-42.55934492478535!3d-19.44537698183671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xafff4eaa9763af%3A0xbb1eddb464d83fcb!2sTriunfo%20Espa%C3%A7o%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1724976833033!5m2!1spt-BR!2sbr"
-                width="600"
-                height="450"
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"></iframe>

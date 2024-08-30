@@ -29,7 +29,7 @@ const cssSessionOne = css<{ active: 'home' | 'localizacao' | 'rsvp' | 'presentes
             }
             @media ${device.mobileML} {
               background-color: transparent;
-              padding: 0;
+              padding: 0.25rem;
             }
           }
         }
@@ -47,25 +47,23 @@ const cssSessionOne = css<{ active: 'home' | 'localizacao' | 'rsvp' | 'presentes
       }
     `}
 `
-const cssSessionFive = css`
+const cssSessionTwo = css`
   padding-top: 2rem;
   width: 65vw;
   position: absolute;
-  top: 5vh;
-  right: 0;
+  top: 10vh;
   & ul {
     & li {
-      border-right: 1px solid #fcfcfc;
+      border-right: 1px solid #111;
       & :hover {
-        border-bottom: 1px solid #fcfcfc;
+        border-bottom: 1px solid #111;
       }
       & div {
         font-size: 1rem;
         letter-spacing: 0.1rem;
         padding: 0.1rem;
-        color: #bababa;
         & :hover {
-          border-bottom: 1px solid #fcfcfc;
+          border-bottom: 1px solid #111;
         }
         @media ${device.mobileML} {
           background-color: transparent;
@@ -74,17 +72,28 @@ const cssSessionFive = css`
       }
     }
     @media ${device.mobileML} {
+      margin: 0;
+      padding: 0.25rem;
+
       & li {
-        border-bottom: 1px solid #fcfcfc;
+        border-bottom: 0px solid #111;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+        & div {
+          background-color: #5b5b5b;
+          padding: 0.15rem;
+        }
       }
     }
   }
 
   @media ${device.mobileML} {
-    bottom: 0vh;
+    width: 100vw;
+    top: 1rem;
+    right: 1rem;
     padding-top: 0rem;
     border-top: none;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 `
 const cssSessionTree = css`
@@ -114,55 +123,29 @@ const cssSessionTree = css`
       }
     }
     @media ${device.mobileML} {
+      margin: 0;
+      padding: 0.25rem;
+
       & li {
-        border-bottom: 1px solid #fcfcfc;
+        border-bottom: 0px solid #111;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+        & div {
+          background-color: #5b5b5b;
+          padding: 0.15rem;
+        }
       }
     }
   }
 
   @media ${device.mobileML} {
-    bottom: 0vh;
+    width: 100vw;
+    bottom: 2rem;
+    top: auto;
+    right: 1rem;
     padding-top: 0rem;
     border-top: none;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-`
-const cssSessionTwo = css`
-  padding-top: 2rem;
-  width: 65vw;
-  position: absolute;
-  top: 10vh;
-  & ul {
-    & li {
-      border-right: 1px solid #111;
-      & :hover {
-        border-bottom: 1px solid #111;
-      }
-      & div {
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        padding: 0.1rem;
-        & :hover {
-          border-bottom: 1px solid #111;
-        }
-        @media ${device.mobileML} {
-          background-color: transparent;
-          padding: 0;
-        }
-      }
-    }
-    @media ${device.mobileML} {
-      & li {
-        border-bottom: 1px solid #111;
-      }
-    }
-  }
-
-  @media ${device.mobileML} {
-    bottom: 0vh;
-    padding-top: 0rem;
-    border-top: none;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 `
 const cssSessionFoor = css`
@@ -191,17 +174,80 @@ const cssSessionFoor = css`
       }
     }
     @media ${device.mobileML} {
+      margin: 0;
+      padding: 0.25rem;
+
       & li {
-        border-bottom: 1px solid #111;
+        border-bottom: 0px solid #111;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        & div {
+          background-color: #fafafa;
+          padding: 0.15rem;
+        }
       }
     }
   }
 
   @media ${device.mobileML} {
-    bottom: 0vh;
+    width: 100vw;
+    top: 1rem;
+    left: 1rem;
     padding-top: 0rem;
     border-top: none;
-    background-color: rgba(0, 0, 0, 0.5);
+  }
+`
+const cssSessionFive = css`
+  padding-top: 2rem;
+  width: 65vw;
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  & ul {
+    & li {
+      border-right: 1px solid #fcfcfc;
+      & :hover {
+        border-bottom: 1px solid #fcfcfc;
+      }
+      & div {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        padding: 0.1rem;
+        color: #bababa;
+        & :hover {
+          border-bottom: 1px solid #fcfcfc;
+        }
+        @media ${device.mobileML} {
+          background-color: transparent;
+          padding: 0;
+        }
+      }
+    }
+    @media ${device.mobileML} {
+      margin: 0;
+      padding: 0.25rem;
+
+      & li {
+        border-bottom: 0px solid #111;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+        & div {
+          background-color: #5b5b5b;
+          padding: 0.15rem;
+        }
+      }
+    }
+  }
+
+  @media ${device.mobileML} {
+    width: 100vw;
+    bottom: 2rem;
+    top: auto;
+    right: 1rem;
+    padding-top: 0rem;
+    border-top: none;
   }
 `
 
@@ -243,9 +289,13 @@ export const Container = styled(motion.nav).attrs(() => ({
         border-right: none;
         padding-right: 0;
         width: 100%;
-        margin: 0.5rem auto;
+        margin: 0.1rem auto;
+
         &:last-child {
           border-bottom: none;
+        }
+        & div {
+          letter-spacing: 0 !important;
         }
       }
     }

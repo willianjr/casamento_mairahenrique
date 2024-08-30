@@ -9,11 +9,15 @@ const backgroundAnimate = keyframes`
   from { background-position: -50% top; opacity:0 }
     to { background-position: -10% top; opacity:1 }
 `
+const backgroundAnimateFoor = keyframes`
+  from { background-position: -50% top; opacity:0 }
+    to { background-position: -10% top; opacity:1 }
+`
 
 export const SessionOne = styled.main`
-  background: url(${Foto1}) fixed no-repeat -10% top;
-  animation: ${backgroundAnimate} 1.5s linear;
-  background-size: contain;
+  /* background: url(${Foto1}) fixed no-repeat -10% top;
+  animation: ${backgroundAnimate} 1.5s linear; */
+  /* background-size: contain; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -23,8 +27,9 @@ export const SessionOne = styled.main`
   align-items: center;
   scroll-snap-align: end;
   @media ${device.mobileML} {
-    background-size: cover;
-    background-position: center top;
+    /* background-size: cover; */
+    background-position: -25% 0%;
+    animation: none;
   }
 `
 export const LogoMarca = styled(motion.img).attrs(() => ({
@@ -40,7 +45,8 @@ export const LogoMarca = styled(motion.img).attrs(() => ({
   @media ${device.mobileML} {
     width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   }
 `
@@ -92,7 +98,7 @@ export const SessionTwo = styled.main`
   transform: skewY(-3deg);
   z-index: 10;
   @media ${device.mobileML} {
-    /* scroll-snap-align: start;*/
+    background-size: cover;
   }
 `
 export const ContainerSessionTwo = styled.div`
@@ -120,6 +126,8 @@ export const ContainerSessionTwo = styled.div`
       border-radius: 1rem;
       border: none;
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+      width: 600px;
+      height: 450px;
     }
     & a {
       display: block;
@@ -131,23 +139,45 @@ export const ContainerSessionTwo = styled.div`
         text-decoration: underline;
       }
     }
+    @media ${device.mobileML} {
+      padding: 5rem 2rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      & h3 {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      }
+      & address,
+      & a {
+        text-align: center;
+        color: #000;
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      & iframe {
+        width: 100%;
+        height: 300px;
+        margin: 1rem 0;
+      }
+    }
   }
 `
 
 export const SessionTree = styled.main`
-  background: url(${Foto1}) fixed no-repeat -10% top;
-  background-size: contain;
+  /* background: url(${Foto1}) fixed no-repeat -10% top; */
+  /* background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: right;
   flex: 1;
-  padding: 5rem 5rem 0rem 50rem;
+  padding: 5rem 5rem 0rem 45rem;
   min-height: 100vh;
   /*  scroll-snap-align: end; */
-  @media ${device.mobileML} {
-    /* scroll-snap-align: start;*/
-  }
+
   & div.conteudo {
+    width: 100%;
     height: 80vh;
     margin-top: 10vh;
     display: flex;
@@ -156,7 +186,7 @@ export const SessionTree = styled.main`
     align-items: center;
     color: #efeeee;
     & p {
-      width: 50%;
+      width: 60%;
       height: auto;
 
       padding-right: 10rem;
@@ -182,11 +212,34 @@ export const SessionTree = styled.main`
       }
     }
   }
+  @media ${device.mobileML} {
+    /* background-position: lfet top;
+    background-repeat: repeat-x; */
+    padding: 1rem;
+    & div.conteudo {
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: start;
+
+      & p {
+        width: 100%;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #efeeee;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
 `
 
 export const SessionFoor = styled.main`
   background: #e2e2e2 url(${Foto3}) no-repeat -10vw top;
   background-size: contain;
+  animation: ${backgroundAnimateFoor} 1.5s linear;
+  /* animation-play-state: paused; */
+  /* animation-delay: calc(var(--scroll) * -21s); */
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -196,7 +249,8 @@ export const SessionFoor = styled.main`
   transform: skewY(3deg);
   z-index: 10;
   @media ${device.mobileML} {
-    /* scroll-snap-align: start;*/
+    background-size: cover;
+    background-position: -50vw top;
   }
 `
 export const ContainerSessionFoor = styled.div`
@@ -239,21 +293,47 @@ export const ContainerSessionFoor = styled.div`
       }
     }
   }
+  @media ${device.mobileML} {
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    & div.conteudo {
+      justify-content: flex-end;
+      & p {
+        width: 100%;
+        color: #fff;
+        line-height: 1.5rem;
+        font-size: 16px;
+        background-color: rgba(1, 1, 1, 0.7);
+        padding: 1rem;
+      }
+
+      & a {
+        width: 150px;
+        text-align: center;
+        color: #000;
+
+        margin: 0.25rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        & img {
+          width: 150px;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
 `
 
 export const SessionFive = styled.main`
-  background: url(${Foto1}) fixed no-repeat -10% top;
-  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: right;
   flex: 1;
   padding: 5rem 5rem 0rem 50rem;
   min-height: 100vh;
-
-  @media ${device.mobileML} {
-    /* scroll-snap-align: start;*/
-  }
 
   & div.conteudo {
     height: 80vh;
@@ -309,6 +389,47 @@ export const SessionFive = styled.main`
       }
       > svg {
         margin: 1rem;
+      }
+    }
+  }
+  @media ${device.mobileML} {
+    padding: 2rem;
+    & div.conteudo {
+      margin-top: 1rem;
+      flex-direction: column;
+      justify-content: start;
+
+      & p {
+        width: 100%;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #efeeee;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+      }
+      & ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        & li {
+          & a {
+            padding: 0.1rem;
+            flex-direction: row;
+            & strong {
+              font-size: 1.2rem;
+              & small {
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+              }
+            }
+            & svg {
+              margin: 0.5rem;
+            }
+          }
+        }
       }
     }
   }

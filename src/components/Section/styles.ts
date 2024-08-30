@@ -9,7 +9,7 @@ export const Container = styled.section<{ bg: string }>`
   min-height: 100vh;
   scroll-snap-align: end;
   position: relative;
-  background-color: ${(p) => p.bg || 'transparent'};
+  background-color: 'transparent';
   /*overflow: hidden;*/
   @media ${device.mobileML} {
     scroll-snap-align: start;
