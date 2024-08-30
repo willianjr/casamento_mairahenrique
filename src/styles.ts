@@ -211,7 +211,7 @@ export const ContainerSessionFoor = styled.div`
     height: 80vh;
     margin-top: 5vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     color: #222;
@@ -221,6 +221,22 @@ export const ContainerSessionFoor = styled.div`
       line-height: 2rem;
       font-size: 20px;
       text-align: center;
+    }
+    & a {
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      & img {
+        width: 200px;
+      }
     }
   }
 `

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ThemeProvider } from 'styled-components'
 import { device, GlobalStyle } from './styles/global'
 import themes from './styles/themes'
@@ -20,6 +21,9 @@ import Menu from './components/Menu'
 import { MdLocationOn } from 'react-icons/md'
 import { TbDiscount } from 'react-icons/tb'
 import { BsFillTelephoneOutboundFill } from 'react-icons/bs'
+import CAMICADO from '@/styles/assets/camicado.png'
+import AMAZON from '@/styles/assets/amazon.png'
+import LAVILLE from '@/styles/assets/laville.png'
 
 function App() {
   const isTabletOrMobile = useMediaQuery({ query: device.mobileML })
@@ -110,6 +114,15 @@ function App() {
                 escolher algo da nossa lista. Cada presente será recebido com muito amor e será uma parte importante da
                 nossa nova vida a dois.
               </p>
+              <a href="https://www.camicado.com.br/lista/convidado/mairaehenrique" target="_blank">
+                <img src={CAMICADO} />
+              </a>
+              <a href="https://presentes.lavillecasa.com.br/lista/mairaehenrique" target="_blank">
+                <img src={LAVILLE} />
+              </a>
+              <a href="https://www.amazon.com.br/hz/wishlist/ls/125TOOQPK8TVU?ref_=wl_share" target="_blank">
+                <img src={AMAZON} />
+              </a>
             </div>
           </ContainerSessionFoor>
         </SessionFoor>
