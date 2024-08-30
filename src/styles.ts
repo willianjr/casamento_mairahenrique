@@ -148,6 +148,7 @@ export const ContainerSessionTwo = styled.div`
       justify-content: flex-end;
       & h3 {
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        font-size: 2rem;
       }
       & address,
       & a {

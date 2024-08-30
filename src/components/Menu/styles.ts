@@ -283,6 +283,7 @@ export const Container = styled(motion.nav).attrs(() => ({
       }
     }
     @media ${device.mobileML} {
+      display: none;
       flex-direction: column;
 
       & li {
