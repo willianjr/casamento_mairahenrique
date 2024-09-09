@@ -465,7 +465,7 @@ export const SessionFive = styled.main`
 
       & p {
         width: 100%;
-        line-height: 1rem;
+        line-height: 1.5rem;
         /* padding: 1rem;
         border-right: none;
         border-bottom: 1px solid #efeeee;
