@@ -17,6 +17,7 @@ export const deviceSize = {
   tablet: '768px',
   laptop: '1024px',
   laptopL: '1440px',
+  desktopM: '1900px',
   desktop: '2560px',
 }
 
@@ -34,6 +35,7 @@ export const device = {
   laptopL: `(min-width: ${deviceSize.laptopL})`,
   laptopML: `(max-width: ${deviceSize.laptopL})`,
   desktop: `(min-width: ${deviceSize.desktop})`,
+  desktopMM: `(max-width: ${deviceSize.desktopM})`,
   desktopM: `(max-width: ${deviceSize.desktop})`,
 }
 export const GlobalStyle = createGlobalStyle<{ theme: themeProps }>`

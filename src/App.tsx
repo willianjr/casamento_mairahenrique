@@ -38,7 +38,7 @@ function App() {
           <Data>
             <p>
               <span>SÁBADO</span>
-              <span>16H30</span>
+              <span>17H</span>
             </p>
             <strong>30</strong>
             <p>

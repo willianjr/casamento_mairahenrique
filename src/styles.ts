@@ -173,7 +173,9 @@ export const SessionTree = styled.main`
   justify-content: center;
   align-items: right;
   flex: 1;
+
   padding: 5rem 5rem 0rem 45rem;
+
   min-height: 100vh;
   /*  scroll-snap-align: end; */
 
@@ -230,6 +232,25 @@ export const SessionTree = styled.main`
         font-size: 1rem;
         line-height: 1.5rem;
         text-align: center;
+      }
+    }
+  }
+  @media (${device.tablet}) and ((${device.desktopMM})) {
+    padding: 6rem 2rem 0rem 15rem;
+    & div.conteudo {
+      margin-top: 2rem;
+      /* flex-direction: column; */
+      /* justify-content: start; */
+
+      & p {
+        width: 100%;
+        line-height: 1rem;
+        /* padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #efeeee;
+
+        line-height: 1.5rem;
+        text-align: center; */
       }
     }
   }
@@ -431,6 +452,26 @@ export const SessionFive = styled.main`
             }
           }
         }
+      }
+    }
+  }
+
+  @media (${device.tablet}) and ((${device.desktopMM})) {
+    padding: 6rem 2rem 0rem 15rem;
+    & div.conteudo {
+      margin-top: 2rem;
+      /* flex-direction: column; */
+      /* justify-content: start; */
+
+      & p {
+        width: 100%;
+        line-height: 1rem;
+        /* padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #efeeee;
+
+        line-height: 1.5rem;
+        text-align: center; */
       }
     }
   }
