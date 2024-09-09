@@ -93,7 +93,9 @@ function App() {
               <br />
               Agradecemos de coração por estarem conosco neste momento tão significativo.
             </p>
-            <a href="https://wa.me/+5531982913071" target="_blank">
+            <a
+              href="https://wa.me/+5531982913074?text=Olá! Gostaria de confirmar presença para o casamento de Maíra e Henrique no dia 30 de Novembro em 2024."
+              target="_blank">
               <strong>RSVP</strong>
               Clique aqui para confirmar a sua presença
             </a>
