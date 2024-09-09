@@ -347,6 +347,25 @@ export const ContainerSessionFoor = styled.div`
       }
     }
   }
+  @media (${device.tablet}) and ((${device.desktopMM})) {
+    padding: 6rem 2rem 0rem 20rem;
+    & div.conteudo {
+      margin-top: 2rem;
+      /* flex-direction: column; */
+      /* justify-content: start; */
+
+      & p {
+        width: 80%;
+        line-height: 1.5rem;
+        /* padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #efeeee;
+
+        line-height: 1.5rem;
+        text-align: center; */
+      }
+    }
+  }
 `
 
 export const SessionFive = styled.main`
