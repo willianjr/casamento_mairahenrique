@@ -56,7 +56,7 @@ body{
     background:${({ theme: { colors } }) => colors.background.body} url(${Foto1}) fixed no-repeat;
     background-size: contain;
     animation: ${backgroundAnimate} 1.5s linear;
-    min-height:100vh;
+    min-height:100dvh;
     padding:0;
     margin:0;
     /* scroll-padding:0.5rem; */

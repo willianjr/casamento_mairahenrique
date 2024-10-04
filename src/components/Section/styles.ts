@@ -6,7 +6,7 @@ export const Container = styled.section<{ bg: string }>`
   display: flex;
   flex-direction: row;
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
   scroll-snap-align: end;
   position: relative;
   background-color: 'transparent';

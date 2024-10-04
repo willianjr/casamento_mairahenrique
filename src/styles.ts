@@ -20,7 +20,7 @@ export const SessionOne = styled.main`
   /* background-size: contain; */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
   padding: 2rem;
   justify-content: center;
@@ -93,7 +93,7 @@ export const SessionTwo = styled.main`
   display: flex;
   flex-direction: row;
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
   /*  scroll-snap-align: end; */
   transform: skewY(-3deg);
   z-index: 10;
@@ -106,7 +106,7 @@ export const ContainerSessionTwo = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
 
   & div.conteudo {
     padding: 15rem 20rem;
@@ -141,7 +141,7 @@ export const ContainerSessionTwo = styled.div`
     }
     @media ${device.mobileML} {
       padding: 5rem 2rem;
-      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -176,7 +176,7 @@ export const SessionTree = styled.main`
 
   padding: 5rem 5rem 0rem 45rem;
 
-  min-height: 100vh;
+  min-height: 100dvh;
   /*  scroll-snap-align: end; */
 
   & div.conteudo {
@@ -265,7 +265,7 @@ export const SessionFoor = styled.main`
   display: flex;
   flex-direction: row;
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
   /*  scroll-snap-align: end; */
   transform: skewY(3deg);
@@ -280,7 +280,7 @@ export const ContainerSessionFoor = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 5rem 5rem 0rem 50rem;
 
   & div.conteudo {
@@ -317,7 +317,7 @@ export const ContainerSessionFoor = styled.div`
   }
   @media ${device.mobileML} {
     padding: 2rem;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,7 +374,7 @@ export const SessionFive = styled.main`
   align-items: right;
   flex: 1;
   padding: 5rem 5rem 0rem 50rem;
-  min-height: 100vh;
+  min-height: 100dvh;
 
   & div.conteudo {
     height: 80vh;
