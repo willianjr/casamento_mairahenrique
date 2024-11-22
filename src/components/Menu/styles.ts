@@ -10,7 +10,7 @@ const cssSessionOne = css<{ active: 'home' | 'localizacao' | 'rsvp' | 'presentes
       border-top: 1px dotted #888;
       padding-top: 2rem;
       position: absolute;
-      bottom: 20vh;
+      bottom: 18vh;
       & ul {
         & li {
           border-right: 1px solid white;

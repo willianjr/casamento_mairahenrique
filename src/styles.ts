@@ -85,6 +85,15 @@ export const Data = styled(motion.div).attrs(() => ({
     font-size: 6rem;
     margin: 0 1rem;
   }
+  & small {
+    align-content: flex-end;
+    justify-content: flex-end;
+    font-size: 65%;
+    flex: 1;
+    display: flex;
+    width: 100%;
+    color: #aaa;
+  }
 `
 
 export const SessionTwo = styled.main`

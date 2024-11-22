@@ -46,6 +46,11 @@ function App() {
               <span>2024</span>
             </p>
           </Data>
+          <Data>
+            <p>
+              <small>DRESS CODE: ESPORTE FINO</small>
+            </p>
+          </Data>
           <Menu session="one" active="home" />
         </SessionOne>
       </Section>
